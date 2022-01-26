@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Performance Survey</title>
+</head>
+<style>
+    .name-section{
+        display: flex;
+    }
+    .name-section input{
+        border: 1px solid black;
+        padding: 5px 40px;
+    }
+
+button{
+    background-color: rgb(185, 184, 184);
+    border: 1px solid black;
+}
+</style>
+<body>
+    <form>
+        <p>Evaluate your team</p>
+        <section class="name-section">
+            <div>
+                <p>First name</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>Last name </p>
+                <input type="text">
+            </div> 
+        </section>
+        <section>
+            <p>Please rate the following statements on a scale from 1 (worst) to 5 (best)</p>
+            <p>How well do members of your team share responsibilty for tasks?</p>
+            <input type="text" name="team-responsibility" list="responsibilty">
+            <datalist id="responsibilty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </datalist>
+        </section>
+        <section>
+            <p>How honest with each are the members of your team?</p>
+            <input type="text" name="team-honesty" list="honest">
+            <datalist id="honest">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </datalist>
+        </section>
+        <section>
+            <p>How much attention is given to the most difficult issues during team meetings?</p>
+            <input type="text" name="team-meeting" list="attention">
+            <datalist id="attention">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </datalist>
+        </section>
+        <section>
+            <p>How well do the members of your team communicate with each other?</p>
+            <input type="text" name="team-communication" list="communication">
+            <datalist id="communication">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </datalist>
+        </section>
+        <section>
+            <p>How do members of your team deal with each others mistakes?</p>
+            <input type="text" name="team-mistakes" list="mistakes">
+            <datalist id="mistakes">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </datalist>
+        </section>
+        <section>
+            <p>How Quickly does your team act on their decisions?</p>
+            <input type="text" name="team-decisions" list="decisions">
+            <datalist id="decisions">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </datalist>
+        </section>
+        <p>Additional Comments</p>
+        <textarea rows="8" cols="50"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+
+    </form>
+    
+</body>
+</html>

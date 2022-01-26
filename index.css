@@ -1,0 +1,12 @@
+.name-section{
+    display: flex;
+}
+.name-section input{
+    border: 1px solid black;
+    padding: 5px 40px;
+}
+
+button{
+background-color: rgb(185, 184, 184);
+border: 1px solid black;
+}
